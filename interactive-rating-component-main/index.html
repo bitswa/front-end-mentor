@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <style>
+    .attribution { grid-area: a; font-size: 11px; text-align: center; color: white; margin-top: 12px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+   <div class="container">
+
+      <div id="_main">
+
+         <button class="_circle">
+            <img class="_circle__image" src="images/icon-star.svg" alt="">
+         </button>
+
+         <h1 class="_main__title">How did we do?</h1>
+         <p class="_main__subtitle">Please let us how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+         <div class="_feedback">
+            <button class="_feedback__button">1</button>
+            <button class="_feedback__button">2</button>
+            <button  class="_feedback__button active">3</button>
+            <button class="_feedback__button">4</button>
+            <button class="_feedback__button">5</button>
+         </div>
+
+         <button class="_submit" type="submit">submit</button>
+
+      </div>
+      
+      <div id="_after" class="_after" style="display: none;">
+         <img class="_after__image" src="images/illustration-thank-you.svg" alt="">
+         <p class="_after__selected">You selected <span id="stars"></span> out of 5</p>
+
+         <h1 class="_after__title">Thank you!</h1>
+         <p class="_after__subtitle">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+      
+
+   </div>
+ 
+   <script src="script.js"></script>
+  
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gabriel (bits) Moura do Val</a>.
+   </div>
+</body>
+</html>
