@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+
+   --color-pale_blue: hsl(225, 100%, 94%);
+   --color-bright_blue: hsl(245, 75%, 52%);
+   --color-very_pale_blue: hsl(225, 100%, 98%);
+   --color-desaturated_blue: hsl(224, 23%, 55%);
+   --color-dark_blue: hsl(223, 47%, 23%);
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+
+   width: 100vw;
+   height: 98vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background: url(images/pattern-background-desktop.svg);
+   background-size: cover;
+   background-attachment: fixed;
+
+}
+
+._card {
+
+   width: 400px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   text-align: center;
+
+   border-radius: 20px;
+
+   background-color: var(--color-very_pale_blue);
+
+}
+
+._card__thumb {
+   
+   width: 100%;
+
+   border-radius: 20px 20px 0px 0px;
+
+}
+
+._card__box {
+
+   padding: 42px;
+   
+
+}
+
+._card__title {
+
+   font-size: 28px;
+
+   font-weight: 700;
+
+   margin-bottom: 12px;
+
+}
+
+._card__subtitle {
+
+   font-size: 16px;
+
+   color: var(--color-desaturated_blue)
+
+}
+
+._plan_box {
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   margin: 48px 8px;
+
+}
+
+._plan_box_left {
+
+   display: flex;
+   
+   gap: 18px;
+
+}
+
+._annual {
+
+   font-weight: 700;
+
+}
+
+._annual__price {
+
+   color: var(--color-desaturated_blue)
+
+}
+
+._plan_box__change {
+
+   font-size: 14px;
+
+   color: var(--color-bright_blue);
+
+   font-weight: 700;
+
+}
+
+._plan_box__change:hover {
+
+   color: var(--color-desaturated_blue);
+
+   text-decoration: none;
+
+}
+
+._card__submit {
+
+   width: 100%;
+
+   border: none;
+   border-radius: 12px;
+
+   padding: 12px;
+
+   margin-bottom: 24px;
+
+   color: var(--color-very_pale_blue);
+
+   background-color: var(--color-bright_blue);
+
+   box-shadow: 2px 12px 22px rgba(0, 0, 0, 0.25);
+
+   font-weight: 700;
+
+   cursor: pointer;
+
+}
+
+._card__submit:hover {
+
+   background-color: hsl(245, 64%, 61%);
+
+}
+
+._card__cancel {
+
+   color: var(--color-desaturated_blue);
+
+   text-decoration: none;
+
+   font-weight: 700;
+
+}
+
+._card__cancel:hover {
+
+   color: var(--color-dark_blue)
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+   .container {
+      background: url(images/pattern-background-mobile.svg);
+      background-attachment: fixed;
+      background-size: cover;
+   }
+
+}
