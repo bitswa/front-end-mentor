@@ -3,9 +3,7 @@
 :root {
 
    --color-very-dark-desaturated-blue: hsl(238, 29%, 16%);
-
    --color-soft-red: hsl(14, 88%, 65%);
-
    --very-dark-grayish-blue: hsl(237, 12%, 33%);
    --color-dark-grayish-blue: hsl(240, 6%, 50%);
 
@@ -24,7 +22,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-
 
    width: 100vw;
    height: 98vh;
@@ -45,9 +42,7 @@
    border-radius: 30px;
 
    background-color: white;
-   
    background-image: url(images/bg-pattern-desktop.svg);
-
    background-repeat: no-repeat;
    background-position-x: -570px;
    background-position-y: -240px;
@@ -55,8 +50,6 @@
 }
 
 ._illustration {
-
-   height: 550px;
 
    grid-area: 'image';
 
@@ -66,14 +59,13 @@
    flex-direction: column;
    justify-content: space-around;
 
+   height: 550px;
+
 }
 
 ._illustration-mobile {
-
    grid-area: 'm-image';
-
    display: none;
-
 }
 
 ._box {
@@ -106,9 +98,9 @@
 
 ._content-title {
 
-   font-weight: 700;
-
    margin-bottom: 32px;
+
+   font-weight: 700;
 
    color: var(--color-very-dark-desaturated-blue);
 
@@ -124,6 +116,7 @@
    border-bottom: 1px solid hsl(240, 5%, 91%);
 
    list-style-type: none;
+   
 }
 
 ._list-title_box {
@@ -140,37 +133,22 @@
 
 }
 
-._list-title:hover {
+._list-title:hover { color: var(--color-soft-red) }
 
-   color: var(--color-soft-red);
+._arrow { align-self: center }
 
+._list-item_box { display: none; }
+
+._list-item { color: var(--color-dark-grayish-blue) }
+
+._list-item { font-size: 14px; padding-top: 12px }
+
+.active { display: block }
+
+.title-active { 
+   color: var(--color-very-dark-desaturated-blue);
 }
 
-._arrow {
-   align-self: center;
-}
-
-._list-item_box {
-   display: none;
-}
-
-._list-item {
-
-   color: var(--color-dark-grayish-blue)
-
-}
-
-.active {
-   display: block;
-}
-
-
-._list-item {
-
-   font-size: 14px;
-   padding-top: 12px;
-
-}
 
 @media only screen and (max-width: 1080px) {
 
@@ -198,15 +176,9 @@
 
    }
 
-   ._content-title {
-      text-align: center;
-   }
+   ._content-title { text-align: center }
 
-   ._illustration {
-
-      display: none;
-
-   }
+   ._illustration { display: none }
 
    ._illustration-mobile {
       
@@ -229,10 +201,6 @@
 
    }
 
-   ._list-title {
-
-      font-size: 15px;
-
-   }
+   ._list-title { font-size: 15px }
 
 }

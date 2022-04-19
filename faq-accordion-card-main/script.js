@@ -1,36 +1,38 @@
-
-const listTitle = document.querySelectorAll("._list-title_box");
-
-listTitle.forEach(e => {
+document.querySelectorAll("._list-title_box").forEach(e => {
 
    e.addEventListener('click', () => {
 
-      
+      // if it's already open
 
       if (e.parentNode.lastElementChild.classList.contains('active')) {
 
          e.parentNode.lastElementChild.classList.toggle('active');
 
-         e.firstElementChild.style.color = "var(--color-dark-grayish-blue)"
-         e.lastElementChild.style.transform = "rotate(0 deg)"
+         // style
+         e.firstElementChild.classList.toggle('title-active');
+         e.lastElementChild.style.transform = "rotate(0deg)";
 
          return
-      }
+      };
+
+      // if you close
 
       document.querySelectorAll('._list-title_box').forEach(e => {
 
          e.parentNode.lastElementChild.classList.remove('active');
 
-         e.firstElementChild.style.color = "var(--color-dark-grayish-blue)"
-         e.lastElementChild.style.transform = "rotate(0deg)"
+         // style
+         e.firstElementChild.classList.remove('title-active');
+         e.lastElementChild.style.transform = "rotate(0deg)";
 
          return
-      })
+      });
 
-      e.parentNode.lastElementChild.classList.add('active')
-      e.firstElementChild.style.color = "var(--color-very-dark-desaturated-blue)"
-      e.lastElementChild.style.transform = "rotate(180deg)"
+      // else
+
+      e.parentNode.lastElementChild.classList.add('active');
+      e.firstElementChild.classList.add('title-active');
+      e.lastElementChild.style.transform = "rotate(180deg)";
 
    })
 });
-
