@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+
+   --color-very-dark-magenta: hsl(300, 43%, 22%);
+   --color-soft-pink: hsl(333, 80%, 67%);
+   --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+   --color-light-grayish-magenta: hsl(300, 24%, 96%);
+   --color-white: hsl(0, 0%, 100%);
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'League Spartan', sans-serif;
+   font-weight: 400;
+}
+
+.container {
+
+   width: 100vw;
+   height: 98vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+
+   background-repeat: no-repeat;
+
+   background-size: contain;
+
+}
+
+._card {
+
+   width: 1150px;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   'title stars'
+   'ratings ratings' ;
+
+   box-shadow: 3px 3px 3px 2.5px hsl(333, 80%, 67%, 10%);;
+
+   padding: 82px 96px;
+
+   background-color: var(--color-white);
+
+}
+
+._bio-box {
+
+   grid-area: 'title';
+
+   width: 345px;
+
+}
+
+._bio-title {
+
+   font-weight: 700;
+
+   font-size: 42px;
+
+   color: var(--color-very-dark-magenta);
+}
+
+._bio-subtitle {
+
+   font-size: 15px;
+   
+   color: var(--color-dark-grayish-magenta)
+
+}
+
+._rating-container {
+
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+
+   grid-area: 'stars';
+
+}
+
+._rating-box {
+
+   display: flex;
+   align-items: center;
+   gap: 12px;
+
+   width: 380px;
+
+   padding: 12px 0px;
+
+   border-radius: 6px;
+
+   font-size: 15px;
+
+   background-color: var(--color-light-grayish-magenta);
+
+}
+
+._stars {
+
+   padding: 0px 12px;
+
+}
+
+._rating {
+   font-weight: 700;
+}
+
+._evaluations-container {
+
+   grid-area: 'ratings';
+   grid-column-start: 1;
+   grid-column-end: 3;
+
+   margin-top: 18px;
+
+   display: flex;
+   justify-content: space-between;
+
+   height: 220px;
+
+}
+
+._evaluation-box {
+
+   display: flex;
+   flex-direction: column;
+
+   padding: 32px 24px;
+   
+   width: 305px;
+   height: 190px;
+
+   border-radius: 8px;
+
+   background-color: var(--color-very-dark-magenta);
+
+}
+
+._picture {
+
+   width: 35px;
+   height: 35px;
+   
+   border-radius:50%;
+
+}
+
+._evaluation-info {
+
+   display: flex;
+
+   align-items: center;
+
+   gap: 18px;
+
+   padding-bottom: 18px;
+
+}
+
+._name {
+   font-size: 15px;
+   color: var(--color-light-grayish-magenta)
+}
+
+._stats {
+   font-size: 15px;
+   color: var(--color-soft-pink)
+}
+
+._evaluation-subtitle {
+
+   font-size: 15px;
+
+   color: var(--color-light-grayish-magenta)
+
+}
+
+.first {
+   align-self: flex-start;
+}
+
+.last { align-self: flex-end;}
+
+@media only screen and (max-width: 1150px) {
+
+   .container {
+      height: 100%;
+   }
+
+   ._card {
+
+      display: flex;
+      text-align: center;
+
+      flex-direction: column;
+
+      padding: 48px 12px;
+
+      width: 375px;
+      height: 100vh;
+
+      overflow: scroll;
+
+   }
+
+   ._bio-subtitle {
+      padding: 32px 0px;
+   }
+
+   ._rating-box {
+      flex-direction: column;
+      align-self: center;
+      width: 305px;
+      margin-bottom: 18px;
+   }
+
+   ._evaluations-container {
+
+      flex-direction: column;
+
+      gap: 12px;
+      
+   }
+
+   ._evaluation-box {
+      align-self: center;
+      
+   }
+
+}
