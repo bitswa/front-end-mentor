@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+:root {
+
+   --color-desaturated-red: hsl(0, 36%, 70%);
+
+   --color-soft-red: hsl(0, 93%, 68%);
+
+   --color-dark-grayish-red: hsl(0, 6%, 24%);
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Josefin Sans', sans-serif;
+   color: var(--color-desaturated-red);
+}
+
+.container {
+
+   width: 100vw;
+   height: 98vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: wheat;
+
+}
+
+.card {
+
+   width: 1100px;
+
+   display: flex;
+
+   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+}
+
+.content {
+
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+
+   padding: 48px;
+   margin: 0px 64px;
+   margin-bottom: 48px;
+   
+}
+
+.title {
+
+   font-size: 48px;
+   font-weight: 600;
+
+   letter-spacing: 12px;
+
+   color: var(--color-dark-grayish-red)
+
+}
+
+.title span {
+   font-weight: 300;
+}
+
+.subtitle {
+
+   font-size: 16px;
+   font-weight: 400;
+
+   padding: 24px 0px;
+
+}
+
+.input_box {
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   margin: 8px 0px;
+
+   border: 0.5px solid grey;
+
+   border-radius: 30px;
+
+}
+
+.email_box {
+   padding: 2px;
+}
+
+.email {
+
+   width: 100%;
+   height: 100%;
+
+   padding: 0px 28px;
+
+   border: none;
+   outline: none;
+
+}
+
+.email__btn {
+
+   height: 100%;
+
+   padding: 12px 42px;
+
+   border: none;
+   border-radius: 100px;
+
+   box-shadow: 0px 2px 8px rgba(0,0,0, 0.35) ;
+
+   cursor: pointer;
+
+   background: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+
+}
+
+.email__btn:hover {
+
+   background: var(--color-desaturated-red);
+   
+}
+
+.msg_error {
+
+   font-size: 14px;
+   font-weight: 400;
+
+   padding: 0px 32px;
+
+   color: var(--color-soft-red);
+
+}
+
+.thumb-box {
+   display: flex;
+}
+
+.thumb-box img {
+   width: 450px
+}
+
+.is-hidden {
+   display: none;
+}
