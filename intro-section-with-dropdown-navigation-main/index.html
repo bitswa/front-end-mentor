@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+
+    <header>
+      
+      <div>
+        <img src="images/logo.svg">
+
+        <ul class="c-dropdown">
+        <li class="c-dropdown__item">
+          <span class="c-dropdown__link">
+            Features
+          </span>
+
+          <ul class="c-dropdown__submenu">
+            <li class="c-dropdown__submenu-item">
+              <img src="images/icon-todo.svg">
+              <a href="" class="c-dropdown__submenu-link">Todo List</a>
+            </li>
+
+            <li class="c-dropdown__submenu-item">
+              <img src="images/icon-calendar.svg">
+              <a href="">Calendar</a>
+            </li>
+
+            <li class="c-dropdown__submenu-item">
+              <img src="images/icon-reminders.svg">
+              <a href="">Reminders</a>
+            </li>
+
+            <li class="c-dropdown__submenu-item">
+              <img src="images/icon-planning.svg">
+              <a href="">Planning</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="c-dropdown__item">
+          <span class="c-dropdown__link">
+            Company
+          </span>
+
+          <ul class="c-dropdown__submenu">
+            <li class="c-dropdown__submenu-item">
+              <a href="" class="c-dropdown__submenu-link">History</a>
+            </li>
+
+            <li class="c-dropdown__submenu-item">
+              <a href="" class="c-dropdown__submenu-link">Our Team</a>
+            </li>
+
+            <li class="c-dropdown__submenu-item">
+              <a href="" class="c-dropdown__submenu-link">Blog</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="c-dropdown__item">
+          <a href="" class="c-dropdown__link">
+            Careers
+          </a>
+        </li>
+
+        <li class="c-dropdown__item">
+          <a href="" class="c-dropdown__link">
+            About
+          </a>
+        </li>
+        </ul>
+      </div>
+      
+      <div>
+        <button class="c-header__btn">
+          Login
+        </button>
+
+        <button class="c-header__btn">
+          Register
+        </button>
+      </div>
+
+    </header>
+
+    <main>
+
+      <section class="c-content">
+
+        <div class="c-content__box">
+          <h1 class="c-content__title">
+            Make remote work
+          </h1>
+
+          <p class="c-content__subtitle">
+            Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+          </p>
+
+          <button class="c-content__btn">
+            Learn more
+          </button>
+        </div>
+
+        <div class="c-content__ads">
+          <img src="images/client-databiz.svg">
+          <img src="images/client-audiophile.svg">
+
+          <img src="images/client-meet.svg">
+          <img src="images/client-maker.svg">
+        </div>
+
+      </section>
+
+      <img src="images/image-hero-desktop.png" class="c-image">
+
+    </main>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
