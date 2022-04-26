@@ -1,5 +1,5 @@
-const sidebar = document.querySelector('.c-side-bar')
-const menu = document.querySelector('.c-menu-icon')
+const sidebar = document.querySelector('.c-side-bar');
+const menu = document.querySelector('.c-menu-icon');
 
 document.querySelectorAll('.submenu').forEach(e => {
 
