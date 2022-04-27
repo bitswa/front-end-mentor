@@ -19,12 +19,14 @@ document.querySelectorAll('.submenu').forEach(e => {
 });
 
 document.querySelector('.c-menu-icon').addEventListener('click', () => {
-   if(sidebar.style.display == "none") {
-      sidebar.style.display = 'block';
-      menu.src = "images/icon-close-menu.svg";
+
+   if(sidebar.classList.contains('u-visible')) {
+      sidebar.classList.remove('u-visible');
+      menu.src = "images/icon-menu.svg";
       return
    }
-   sidebar.style.display = 'none';
-   menu.src = "images/icon-menu.svg";
+
+   sidebar.classList.add('u-visible')
+   menu.src = "images/icon-close-menu.svg";
    
 });

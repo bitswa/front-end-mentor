@@ -1,0 +1,58 @@
+main {
+   display: flex;
+   justify-content: space-around;
+
+   padding: 3rem 7rem;
+   padding-bottom: 5rem;
+
+   .c-content {
+      display: grid;
+      grid-template-rows: 1fr 0.1fr;
+      padding-right: 9rem;
+
+      .c-content__box {
+         align-self: center;
+
+         .c-content__title {
+            font-size: 4rem;
+            font-weight: 700;
+            color: $almost-black;
+         }
+
+         .c-content__subtitle {
+            font-size: 18px;
+            margin: 3rem 0;
+         }
+
+         .c-content__btn {
+            padding: 14px 22px;
+            color: $almost-white;
+            background-color: $almost-black;
+
+            border: 2px solid $almost-black;
+            border-radius: 12px;
+            cursor: pointer;
+
+            &:hover {
+               background: none;
+               color: $almost-black;
+            }
+         }
+      }
+
+      .c-content__ads {
+         display: flex;
+         align-items: flex-end;
+         gap: 1.5rem;
+      }
+   }
+
+   .c-image {
+      width: 550px;
+   }
+
+   .c-mobile-image {
+      display: none;
+      width: 375px;
+   }
+}
