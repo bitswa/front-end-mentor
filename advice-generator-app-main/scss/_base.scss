@@ -1,0 +1,25 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Manrope', sans-serif;
+}
+
+.c-container {
+   display:grid;
+   place-items: center;
+   height: 98vh;
+
+   background-color: $DarkBlue;
+}
+
+.c-card {
+   
+   width: clamp(375px, 50%, 500px);
+   padding: 1rem 1.5rem;
+
+   border-radius: 18px;
+
+   background-color: $DarkGrayishBlue;
+
+}

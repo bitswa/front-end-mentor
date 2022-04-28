@@ -1,0 +1,25 @@
+.c-content {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+
+   .c-advice {
+      color: $NeonGreen;
+      font-size: 14px;
+
+      letter-spacing: 3px;
+
+      margin-top: 1rem;
+
+      // .c-advice__id {}
+   }
+
+   .c-quote {
+      color: $LightCyan;
+      font-size: 28px;
+      margin: 1rem 0;
+   }
+}

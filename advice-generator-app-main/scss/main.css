@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+.c-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 98vh;
+  background-color: #1f2632;
+}
+
+.c-card {
+  width: clamp(375px, 50%, 500px);
+  padding: 1rem 1.5rem;
+  border-radius: 18px;
+  background-color: #323a49;
+}
+
+.c-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.c-content .c-advice {
+  color: #52ffa8;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-top: 1rem;
+}
+
+.c-content .c-quote {
+  color: #cee3e9;
+  font-size: 28px;
+  margin: 1rem 0;
+}
+
+.c-divider {
+  width: clamp(320px, 100%, 500px);
+  margin: 1rem 0;
+}
+
+.c-footer {
+  position: relative;
+  padding: 0.4rem;
+}
+
+.c-footer .c-circle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #52ffa8;
+}
+
+.c-footer .c-circle:hover {
+  -webkit-box-shadow: 0px 0px 3rem 0px #52ffa8;
+          box-shadow: 0px 0px 3rem 0px #52ffa8;
+}
+
+.c-footer .c-circle .c-dice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=main.css.map */
