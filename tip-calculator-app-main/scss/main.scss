@@ -6,7 +6,6 @@ $lightgrayishcyan: hsl(185, 41%, 84%);
 $verylightgrayishcyan: hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
 
-
 * {
    margin: 0;
    padding: 0;
@@ -54,8 +53,7 @@ $white: hsl(0, 0%, 100%);
             .c-btn {
                text-align: center;
                user-select: none;
-               cursor: pointer;
-
+               
                font-size: 24px;
                color: $white;
 
@@ -63,6 +61,8 @@ $white: hsl(0, 0%, 100%);
 
                border: none;
                border-radius: 4px;
+
+               cursor: pointer;
 
                background-color: $verydarkcyan;
 
@@ -76,13 +76,16 @@ $white: hsl(0, 0%, 100%);
                width: 100%;
 
                font-size: 24px;
+               text-align: end;
 
-               text-align: center;
+               padding-right: 12px;
+
+               outline: none;
 
                border: none;
                border-radius: 4px;
 
-               outline: none;
+               cursor: pointer;
 
                background-color: $verylightgrayishcyan;
 
@@ -94,9 +97,7 @@ $white: hsl(0, 0%, 100%);
 
          }
 
-
       }
-
 
       .c-input__people {
 
@@ -164,16 +165,18 @@ $white: hsl(0, 0%, 100%);
          background-color: $strongcyan;
       }
 
+      .c-reset {
+         cursor: pointer;
+      }
+
    }
 
 
 }
 
 .c-input__label {
-
    font-size: 14px;
    color: $darkgrayishcyan;
-
 }
 
 
@@ -186,6 +189,7 @@ $white: hsl(0, 0%, 100%);
 
    padding: 4px 10px;
 
+   border: 2px solid $white;
    border-radius: 4px;
    
    background-color: $verylightgrayishcyan;
@@ -198,7 +202,14 @@ $white: hsl(0, 0%, 100%);
       background: none;
       outline: none;
 
-      text-align: end;   
+      text-align: end;
+
+      cursor: pointer;
+
+   }
+
+   &:hover  {
+      border: 2px solid black;
    }
 
    &.inAlert {
