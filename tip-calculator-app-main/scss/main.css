@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+.c-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 97vh;
+  background-color: #c5e4e7;
+}
+
+.c-card {
+  width: 800px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border-radius: 18px;
+  padding: 1.2rem;
+  background-color: white;
+}
+
+.c-card .c-input .c-input__tip {
+  margin: 1.2rem 0px;
+}
+
+.c-card .c-input .c-input__tip .c-btn_box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.c-card .c-input .c-input__tip .c-btn_box .c-btn {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  padding: 2px 1.4rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #00494d;
+}
+
+.c-card .c-input .c-input__tip .c-btn_box .c-btn.isActive {
+  background-color: #26c0ab;
+}
+
+.c-card .c-input .c-input__tip .c-btn_box input {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f4fafa;
+}
+
+.c-card .c-input .c-input__tip .c-btn_box input.isActive {
+  border: 1.5px solid black;
+}
+
+.c-card .c-input .c-input__people .c-input__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-card .c-input .c-input__people .c-input__text .c-alert {
+  font-size: 14px;
+  color: red;
+}
+
+.c-card .c-input .c-input__people .c-input__text .c-alert {
+  display: none;
+}
+
+.c-card .c-input .c-input__people .c-input__text .c-alert.inAlert {
+  display: block;
+}
+
+.c-card .c-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #00494d;
+}
+
+.c-card .c-amount .c-amount__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-card .c-amount .c-amount__box h1 {
+  font-size: 2rem;
+  color: #26c0ab;
+}
+
+.c-card .c-amount .c-amount__box span {
+  font-size: 14px;
+  color: white;
+}
+
+.c-card .c-amount .c-amount__box span p {
+  color: #7f9c9f;
+}
+
+.c-card .c-amount button {
+  color: #00494d;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #26c0ab;
+}
+
+.c-input__label {
+  font-size: 14px;
+  color: #5e7a7d;
+}
+
+.c-input__box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: #f4fafa;
+}
+
+.c-input__box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  text-align: end;
+}
+
+.c-input__box.inAlert {
+  border: 2px solid red;
+}
+/*# sourceMappingURL=main.css.map */

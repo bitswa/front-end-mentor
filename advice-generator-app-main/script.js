@@ -5,9 +5,9 @@ const fetchAdvice = async () => {
    const res = await fetch("https://api.adviceslip.com/advice", {cache: 'no-store'});
    const data = await res.json();
 
-   
    id.textContent = data.slip.id;
    advice.textContent = `"${data.slip.advice}"`;
+   
 }
 fetchAdvice();
 
