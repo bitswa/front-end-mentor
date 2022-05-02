@@ -1,0 +1,52 @@
+$softred: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkdesaturatedcyan-graphicdesign-text: hsl(167, 40%, 24%);
+$darkblue-photography-text: hsl(198, 62%, 26%);
+$darkmoderatecyan-footer: hsl(168, 34%, 41%);
+$verydarkdesaturatedblue: hsl(212, 27%, 19%);
+$verydarkgrayishblue: hsl(213, 9%, 39%);
+$darkgrayishblue: hsl(232, 10%, 55%);
+$grayishblue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Barlow', sans-serif;
+}
+
+.c-container {
+   width: 90vw;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   margin: 0 auto;
+}
+
+@mixin sectionWithImage {
+   width: 50%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+
+   h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-size: 2.3rem;
+   }
+
+   p { font-size: 18px }
+
+   a {
+      color: $verydarkdesaturatedblue;
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      text-decoration: none;
+   }
+}
+
+.isVisible { display: block !important}
