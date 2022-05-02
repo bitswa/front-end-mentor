@@ -1,0 +1,265 @@
+$softred: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkdesaturatedcyan-graphicdesign-text: hsl(167, 40%, 24%);
+$darkblue-photography-text: hsl(198, 62%, 26%);
+$darkmoderatecyan-footer: hsl(168, 34%, 41%);
+$verydarkdesaturatedblue: hsl(212, 27%, 19%);
+$verydarkgrayishblue: hsl(213, 9%, 39%);
+$darkgrayishblue: hsl(232, 10%, 55%);
+$grayishblue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Barlow',sans-serif;
+}
+
+@mixin sectionWithImage {
+   width: 50%;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+
+   h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-size: 2.3rem;
+   }
+   
+   p {
+      font-size: 18px;
+   }
+
+   a {
+      color: $verydarkdesaturatedblue;
+      font-family: 'Fraunces', serif;
+      font-weight:900;
+      text-decoration: none;
+   }
+}
+
+.c-container {
+   width: 90vw;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   margin: 0 auto;
+   
+}
+
+header {
+   width: 100%;
+
+   position: relative;
+
+   display: flex;
+   flex-direction: column;
+
+   .c-header {
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 1.2rem 2rem;
+
+      .c-header__nav {
+         display:flex;
+         align-items: center;
+         gap: 2rem;
+
+         a {
+            color: $white;
+            text-decoration: none;
+         }
+
+         button {
+            padding: 14px 1.5rem;
+
+            border: none;
+            border-radius: 70px;
+
+            background-color: $white;
+            cursor: pointer;
+         }
+      }
+   }
+
+   .c-thumb {
+      width: 100%;
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+
+main {
+   width: 100%;
+
+   display: grid;
+   grid-template-areas:
+   'transform'
+   'stand'
+   'designph'
+   'client'
+   'illustrations';
+
+   .c-section {
+      display: flex;
+      justify-content: space-between;
+
+      .c-transform_box {
+         @include sectionWithImage;
+         padding: 8rem 9rem 10rem 8rem;
+      }
+      .c-stand_box {
+         @include sectionWithImage;
+         padding: 8rem 11rem 10em 6rem;
+      }
+
+      img {
+         width: 50%;
+      }
+
+      .c-section_box {
+         position: relative;
+         width: 50%;
+
+         img {
+            width: 100%;
+         }
+      }
+
+      .c-title_box {
+         position: absolute;
+         top: 65%;
+         text-align: center;
+
+         padding: 0 12rem;
+
+         h1 {
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+         }
+         p {
+            padding-top: 1.7rem;
+            font-size: 18px;
+         }
+      }
+
+      .design {
+         h1, p {
+            color: $darkdesaturatedcyan-graphicdesign-text;
+         }
+      }
+
+      .photo {
+         h1, p {
+            color: $darkblue-photography-text;
+         }
+      }
+
+      .transform { grid-area: transform; }
+      .stand { grid-area: stand; }
+      .designph { grid-area: designph; }
+      .client { grid-area: client; }
+      .illustrations { grid-area: illustrations; }
+   }
+
+   .c-client_section {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      text-align: center;
+      padding: 8rem 6rem;
+
+      h1 {
+         color: $grayishblue;
+
+         font-family: 'Fraunces', serif;
+         font-weight: 700;
+         letter-spacing: 4px;
+      }
+
+      .c-client__box {
+         display: flex;
+
+         .c-client {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+
+            padding: 0 4rem;
+
+            img {
+               width: 75px;
+               border-radius: 50%;
+            }
+
+            h2 {
+               color: $verydarkdesaturatedblue;
+               font-size: 1.2rem;
+               font-family: 'Fraunces', serif;
+               font-weight: 900;
+
+               padding-bottom: 12px;
+            }
+
+            p {
+               color: $darkgrayishblue;
+               font-size: 18px;
+            }
+
+            div p {
+               color: $grayishblue;
+            }
+         }
+      }
+   }
+}
+
+footer {
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.5rem;
+   
+   padding: 3rem 0;
+   background-color: $grayishblue;
+
+   .c-footer__logo {
+      fill: $darkmoderatecyan-footer;
+   }
+
+   .c-footer__opt {
+      display: flex;
+      gap: 2rem;
+      
+      a {
+         color: $darkmoderatecyan-footer;
+         text-decoration: none;
+      }
+   }
+
+   .c-footer__medias {
+      display: flex;
+      gap: 1rem;
+
+      padding-top: 2rem;
+   }
+}
