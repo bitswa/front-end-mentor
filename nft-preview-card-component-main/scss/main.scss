@@ -1,0 +1,7 @@
+$color-soft_blue: hsl(215, 51%, 70%);
+$color-cyan: rgba(0, 255, 247, 0.5);
+$color-very_dark_blue: hsl(215, 32%, 27%);
+$color-white: hsl(0, 0%, 100%);
+
+@import '_base.scss';
+@import '_card.scss';
