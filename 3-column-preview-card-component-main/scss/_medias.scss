@@ -1,0 +1,24 @@
+@media screen and (max-width: 900px) {
+   .c-container {
+      height: 100%;
+   }
+   .c-card {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      width: 375px;
+
+      padding: 32px 0px;
+
+      .c-first_box {
+         border-radius: 10px 10px 0px 0px;
+      }
+
+      .c-info_subtitle {
+         margin-bottom: 24px;
+      }
+
+      .c-third_box {
+         border-radius: 0px 0px 10px 10px;
+      }
+   }
+}

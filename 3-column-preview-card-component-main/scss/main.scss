@@ -1,0 +1,9 @@
+$color-orange: hsl(31, 77%, 52%);
+$color-dark-cyan: hsl(184, 100%, 22%);
+$color-very-dark-cyan: hsl(179, 100%, 13%);
+$color-paragraphs: hsla(0, 0%, 100%, 0.75);
+$color-background-headings-buttons: hsl(0, 0%, 95%);
+
+@import '_base.scss';
+@import '_card.scss';
+@import '_medias.scss';

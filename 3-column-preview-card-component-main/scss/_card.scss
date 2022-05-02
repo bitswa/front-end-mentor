@@ -1,0 +1,77 @@
+.c-card {
+   width: 900px;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   .c-first_box {
+      border-radius: 10px 0px 0px 10px;
+      background-color: $color-orange;
+
+      .c-info_box {
+         @include info-box-preset;
+
+         .c-info_title {
+            @include info-title-preset;
+         }
+         .c-info_subtitle {
+            @include info-subtitle-preset;
+         }
+         .c-btn {
+            @include btn-preset;
+            color: $color-orange;
+
+            &:hover {
+               color: $color-paragraphs;
+            }
+         }
+      }
+   }
+   
+   .c-second_box {
+      background-color: $color-dark-cyan;
+
+      .c-info_box {
+         @include info-box-preset;
+
+         .c-info_title {
+            @include info-title-preset;
+         }
+         .c-info_subtitle {
+            @include info-subtitle-preset;
+         }
+         .c-btn {
+            @include btn-preset;
+            color: $color-dark-cyan;
+
+            &:hover {
+               color: $color-paragraphs;
+            }
+         }
+      }
+   }
+   
+   .c-third_box {
+      border-radius: 0px 10px 10px 0px;
+      background-color: $color-very-dark-cyan;
+
+      .c-info_box {
+         @include info-box-preset;
+
+         .c-info_title {
+            @include info-title-preset;
+         }
+         .c-info_subtitle {
+            @include info-subtitle-preset;
+         }
+         .c-btn {
+            @include btn-preset;
+            color: $color-very-dark-cyan;
+            
+            &:hover {
+               color: $color-paragraphs;
+            }
+         }
+      }
+   }
+}

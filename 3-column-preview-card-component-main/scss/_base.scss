@@ -1,0 +1,57 @@
+@mixin info-box-preset {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+
+   padding: 45px;
+}
+@mixin info-title-preset {
+   font-family: 'Big Shoulders Display',
+      cursive;
+   font-weight: 700;
+
+   padding: 32px 0px;
+
+   text-transform: uppercase;
+   color: $color-background-headings-buttons;
+}
+@mixin info-subtitle-preset {
+   margin-bottom: 82px;
+
+   font-size: 15px;
+   color: $color-paragraphs;
+}
+@mixin btn-preset {
+   padding: 12px 28px;
+
+   border: 2px solid;
+   border-color: $color-paragraphs;
+   border-radius: 50px;
+
+   cursor: pointer;
+   background-color: $color-background-headings-buttons;
+
+   &:hover {
+      background: none;
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Lexend Deca', sans-serif;
+   font-weight: 400;
+}
+
+.c-container {
+   width: 100vw;
+   height: 98vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: $color-background-headings-buttons;
+}

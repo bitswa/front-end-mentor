@@ -1,5 +1,5 @@
-let $headerBox = document.querySelector('.c-header__box')
-let $headerIcon = document.querySelector('.c-hamburguer')
+let $headerBox = document.querySelector('.c-header__box'),
+   $headerIcon = document.querySelector('.c-hamburguer');
 
 $headerIcon.addEventListener('click', e => {
 
