@@ -7,71 +7,62 @@
    .c-first_box {
       border-radius: 10px 0px 0px 10px;
       background-color: $color-orange;
-
-      .c-info_box {
-         @include info-box-preset;
-
-         .c-info_title {
-            @include info-title-preset;
-         }
-         .c-info_subtitle {
-            @include info-subtitle-preset;
-         }
-         .c-btn {
-            @include btn-preset;
-            color: $color-orange;
-
-            &:hover {
-               color: $color-paragraphs;
-            }
-         }
+      .c-btn {
+         color: $color-very-dark-cyan;
       }
    }
    
    .c-second_box {
       background-color: $color-dark-cyan;
-
-      .c-info_box {
-         @include info-box-preset;
-
-         .c-info_title {
-            @include info-title-preset;
-         }
-         .c-info_subtitle {
-            @include info-subtitle-preset;
-         }
-         .c-btn {
-            @include btn-preset;
-            color: $color-dark-cyan;
-
-            &:hover {
-               color: $color-paragraphs;
-            }
-         }
+      .c-btn {
+         color: $color-dark-cyan;
       }
    }
    
    .c-third_box {
       border-radius: 0px 10px 10px 0px;
       background-color: $color-very-dark-cyan;
+      .c-btn {
+         color: $color-very-dark-cyan;
+      }
+   }
+}
 
-      .c-info_box {
-         @include info-box-preset;
+.c-info_box {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   
+   padding: 45px;
 
-         .c-info_title {
-            @include info-title-preset;
-         }
-         .c-info_subtitle {
-            @include info-subtitle-preset;
-         }
-         .c-btn {
-            @include btn-preset;
-            color: $color-very-dark-cyan;
-            
-            &:hover {
-               color: $color-paragraphs;
-            }
-         }
+   .c-info_title {
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 700;
+      text-transform: uppercase;
+      
+      padding: 32px 0px;
+      color: $color-background-headings-buttons;
+   }
+
+   .c-info_subtitle {
+      margin-bottom: 82px;
+      font-size: 15px;
+      color: $color-paragraphs;
+   }
+
+   .c-btn {
+      padding: 12px 28px;
+      
+      border: 2px solid $color-paragraphs;
+      border-radius: 50px;
+      
+      cursor: pointer;
+      background-color: $color-background-headings-buttons;
+
+      &:hover {
+         background: none;
+         color: $color-paragraphs;
       }
    }
 }
