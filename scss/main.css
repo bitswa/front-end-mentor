@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.c-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.c-card {
+  width: 1280px;
+  padding: 2rem;
+  background-color: #d8334a;
+}
+
+.c-card header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.c-card header img {
+  width: 180px;
+  border-radius: 50%;
+  border: 6px solid White;
+}
+
+.c-card header h1 {
+  font-size: 1.5rem;
+}
+
+.c-card header .c-social_medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  padding: 8px 1rem;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.c-card header .c-social_medias i {
+  font-size: 2rem;
+}
+
+.c-card .c-pages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.c-card .c-pages .c-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid black;
+  border-radius: 14px 0 0 0;
+}
+
+.c-card .c-pages .c-project div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.c-card .c-pages .c-project div a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 0 0 0;
+}
+
+.c-card .c-pages .c-project div a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 10px;
+}
+
+.c-card .c-pages .c-project div .c-project__options {
+  padding: 8px;
+  background-color: white;
+}
+
+.c-card .c-pages .c-project div .c-project__options i {
+  font-size: 2rem;
+}
+
+.c-card .c-pages .c-project .c-project__title {
+  text-align: center;
+  padding: 8px;
+  background-color: white;
+}
+/*# sourceMappingURL=main.css.map */
