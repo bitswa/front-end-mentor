@@ -48,6 +48,14 @@
 
          img { width: 100% }
 
+         .c-photo_image, .c-graph_image, .c-image {
+            display: none;
+         }
+
+         .c-photo_mobile_image, .c-graph_mobile_image, .c-mobile_image {
+            display: block;
+         }
+
          .c-transform_box, .c-stand_box {
             width: 100%;
 
@@ -65,7 +73,6 @@
 
             img { height: 100% }
          }
-         .c-title_box { padding: 0 1rem }
       }
 
       .c-mobile_illustrations { 

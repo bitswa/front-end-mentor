@@ -13,6 +13,10 @@ main {
       display: flex;
       justify-content: space-between;
 
+      .c-photo_mobile_image, .c-graph_mobile_image, .c-mobile_image {
+         display: none;
+      }
+
       .c-transform_box {
          @include sectionWithImage;
          padding: 8rem 9rem 10rem 8rem;
@@ -124,5 +128,9 @@ main {
             div p { color: $grayishblue }
          }
       }
+   }
+
+   .c-mobile_illustrations {
+      display: none;
    }
 }
