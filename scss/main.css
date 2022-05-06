@@ -3,20 +3,22 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
 }
 
 .c-container {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  width: 100vw;
-  height: 100vh;
+  background-color: #292c35;
 }
 
 .c-card {
   width: 1280px;
   padding: 2rem;
-  background-color: #d8334a;
+  margin: 3% 0;
+  border-radius: 20px;
+  background-color: #17181d;
 }
 
 .c-card header {
@@ -33,17 +35,21 @@
   gap: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
 }
 
 .c-card header img {
   width: 180px;
   border-radius: 50%;
-  border: 6px solid White;
+  border: 6px solid white;
 }
 
 .c-card header h1 {
   font-size: 1.5rem;
+}
+
+.c-card header h1, .c-card header p {
+  color: white;
 }
 
 .c-card header .c-social_medias {
@@ -53,12 +59,18 @@
   gap: 1rem;
   padding: 8px 1rem;
   border-radius: 15px;
-  background-color: white;
+  background-color: #fca311;
 }
 
 .c-card header .c-social_medias i {
   color: black;
   font-size: 2rem;
+}
+
+.c-card header .c-social_medias i:hover {
+  color: #0000af;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .c-card .c-pages {
@@ -95,8 +107,8 @@
 }
 
 .c-card .c-pages .c-project div img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
   border-radius: 10px;
 }
 
@@ -109,7 +121,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 8px;
-  background-color: white;
+  background-color: #fca311;
 }
 
 .c-card .c-pages .c-project div .c-project__options i {
@@ -117,9 +129,16 @@
   font-size: 2rem;
 }
 
+.c-card .c-pages .c-project div .c-project__options i:hover {
+  color: #0000af;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 .c-card .c-pages .c-project .c-project__title {
   text-align: center;
   padding: 8px;
-  background-color: white;
+  color: black;
+  background-color: #fca311;
 }
 /*# sourceMappingURL=main.css.map */
