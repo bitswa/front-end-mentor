@@ -1,127 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    
+    <link rel="stylesheet" href="./src/scss/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap">  
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
-  <link rel="stylesheet" href="scss/main.css">
-</head>
-<body>
-
-  <div class="c-container">
-
-    <main class="c-card">
-
-      <form class="c-input">
-
-        <div class="c-input__bill">
-          <label for="bill" class="c-input__label">
-            Bill
-          </label>
-
-          <div class="c-input__box">
-
-            <img src="images/icon-dollar.svg">
-            <input type="text" name="bill" id="bill">
-
-          </div>
-
-        </div>
-
-        <div class="c-input__tip">
-
-          <label for="tip" class="c-input__label">
-            Select Tip %
-          </label>
-
-          <div class="c-btn_box">
-            
-            <div class="c-btn opt" value="5"><span>5</span>%</div>
-            <div class="c-btn opt"><span>10</span>%</div>
-            <div class="c-btn opt"><span>15</span>%</div>
-            <div class="c-btn opt"><span>25</span>%</div>
-            <div class="c-btn opt"><span>50</span>%</div>
-            <input class="opt" type="text" name="custom" id="custom" placeholder="Custom">
-
-          </div>
-
-        </div>
-
-        <div class="c-input__people">
-          
-          <div class="c-input__text">
-
-            <label for="people" class="c-input__label">
-            Number of People
-            </label>
-
-            <span class="c-alert">Can't be zero</sp>
-
-          </div>
-
-          <div class="c-input__box">
-
-            <img src="images/icon-person.svg">
-            <input type="text" name="people" id="people">
-
-          </div>
-
-        </div>
-
-      </form>
-
-      <section class="c-amount">
-
-        <div>
-
-          <div class="c-amount__box">
-
-            <span>
-              Tip Amount
-              <p>/ person</p>
-            </span>
-            
-            <h1 id="tip">$0.00</h1>
-
-          </div>
-
-          <div class="c-amount__box">
-
-            <span>
-              Total
-              <p>/ person</p>
-            </span>
-
-            <h1 id="total">$0.00</h1>
-
-          </div>
-
-        </div>
-        
-        <button class="c-reset">RESET</button>
-
-      </section>
-
-    </main>
-
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Gabriel (bits) Moura do Val</a>.
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip-calculator-app-main</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

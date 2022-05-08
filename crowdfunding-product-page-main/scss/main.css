@@ -152,6 +152,16 @@ body {
   padding-right: 2rem;
 }
 
+.c-main .c-section-info .c-info-box .c-info-box__box .c-info-box__title {
+  color: black;
+  font-size: 1.7rem;
+}
+
+.c-main .c-section-info .c-info-box .c-info-box__box .c-info-box__subtitle {
+  color: #7a7a7a;
+  font-size: 16px;
+}
+
 .c-main .c-section-info .c-info-box .c-info-box__box:not(:first-child) {
   padding-left: 2rem;
   padding-right: 5rem;
@@ -207,6 +217,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.c-main .c-section-about .c-stands-box div .c-stands__description {
+  color: #7a7a7a;
+}
+
+.c-main .c-section-about .c-stands-box div .c-stands__description h2 {
+  font-size: 32px;
+  color: black;
+  margin-right: 8px;
 }
 
 .c-main .c-section-about .c-stands-box .c-stands__title {
