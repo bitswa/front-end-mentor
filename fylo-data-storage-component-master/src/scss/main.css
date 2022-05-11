@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #848794;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #0c122c;
+  background-image: url("../images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+
+.c-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.c-container .c-header {
+  padding: 2rem 6rem 2rem 2rem;
+  border-radius: 8px 50% 8px 8px;
+  background-color: #1d2c67;
+}
+
+.c-container .c-header .c-header__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.c-container .c-header .c-header__options div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.c-container .c-main {
+  width: 27rem;
+  height: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #1d2c67;
+}
+
+.c-container .c-main .c-main__title span {
+  font-weight: 700;
+  color: #dddbff;
+}
+
+.c-container .c-main input[type=range] {
+  width: 100%;
+  height: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 30px;
+}
+
+.c-container .c-main .c-main__gb-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-container .c-main .c-main__gb-info p {
+  font-weight: 700;
+  color: #dddbff;
+}
+/*# sourceMappingURL=main.css.map */
