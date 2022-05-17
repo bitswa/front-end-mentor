@@ -1,0 +1,9 @@
+$component-name: 'c-button';
+
+.#{$component-name} {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+}

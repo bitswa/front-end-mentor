@@ -1,0 +1,30 @@
+$component-name: 'c-social-medias';
+
+.#{$component-name} {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4rem;
+  margin-left: 0;
+
+  .c-circle {
+    display: grid;
+    place-items: center;
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 50%;
+
+    i {
+      display: grid;
+      place-items: center;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  @include breakpoint(768px) {
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}

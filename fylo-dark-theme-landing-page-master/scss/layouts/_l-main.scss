@@ -1,0 +1,104 @@
+$component-name: 'l-main';
+
+.#{$component-name} {
+  @include flexColumnGap(8rem);
+
+  color: var(--color-white);
+  background-color: var(--color-main-background);
+
+  text-align: center;
+  padding: 2.3rem;
+
+  .l-main__header {
+    figure {
+      @include flexColumnGap(1.5rem);
+      margin-bottom: 1.5rem;
+    }
+
+    &_illustration {
+      width: 100%;
+      align-self: center;
+    }
+    &_main-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+    }
+    .c-button {
+      width: 80%;
+    }
+
+  }
+
+  .l-main__informations {
+    @include flexColumnGap(6rem);
+
+    figure {
+      @include flexColumnGap(0.5rem);
+    }
+
+    &_illustration {
+      align-self: center;
+      margin-bottom: 1.5rem;
+    }
+    &_main-title {
+      font-weight: 700;
+      font-family: 'Raleway', sans-serif;
+    }
+    
+  }
+
+  .l-main__productive {
+    text-align: left;
+
+    figure {
+      @include flexColumnGap(1rem);
+    }
+
+    &_illustration {
+      width: 100%;
+      align-self: center;
+      margin-bottom: 1.5rem;
+    }
+
+    &_main-title {
+      font-weight: 700;
+      font-family: 'Raleway', sans-serif;
+    }
+    &_subtitle {
+      @include flexColumnGap(1rem);
+      &:last-child {
+        margin-bottom: 1rem;
+      }
+    }
+    &_link {
+      text-decoration: none;
+      color: var(--color-cyan-gradient);
+      border-bottom: 2px solid var(--color-cyan-gradient);
+      padding-bottom: 6px;
+      
+      .c-arrow {
+        align-self: center;
+      }
+    }
+  }
+
+  .l-main__cards {
+    @include flexColumnGap(2rem);
+
+    &_card {
+      @include flexColumnGap(14px);
+
+      text-align: left;
+      padding: 1.5rem 1rem;
+      
+      border-radius: 6px;
+      background-color: var(--color-testimonials-background);
+
+      .c-main-title {
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+
+}

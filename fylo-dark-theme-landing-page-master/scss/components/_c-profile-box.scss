@@ -1,0 +1,20 @@
+$component-name: 'c-profile-box';
+
+.#{$component-name} {
+  display: flex;
+  align-items: center;
+
+  &__pic {
+    width: 30px;
+    border-radius: 50%;
+    align-self: center;
+    margin-right: 12px;
+  }
+  &__name {
+    font-weight: 700;
+  }
+  &__job {
+    font-weight: 400;
+    color: var(--color-cyan-gradient);
+  }
+}

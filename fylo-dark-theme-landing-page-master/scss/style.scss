@@ -1,0 +1,54 @@
+$projects-colors: (
+  "int-sign-background": hwb(216 11% 81%),
+  "main-background": hwb(217 9% 84%),
+  "footer-background": hwb(215 4% 86%),
+  "testimonials-background": hwb(219 13% 76%),
+  "cyan-gradient": hwb(176 40% 11%),
+  "blue-gradient": hwb(198 20% 20%),
+  "error": hwb(0 26% 0%),
+  "white": hwb(0 100% 0%),
+);
+
+:root {
+  @each $name, $color in $projects-colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+@mixin breakpoint($var) {
+  @media (min-width: $var) {
+    @content;
+  }
+}
+
+@mixin flexColumnGap($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+// layouts
+
+@import 'layouts/l-header';
+@import 'layouts/l-main';
+@import 'layouts/l-footer';
+
+// components 
+
+@import 'components/c-options';
+@import 'components/c-informations';
+@import 'components/c-contacts';
+@import 'components/c-social-medias';
+@import 'components/c-button';
+@import 'components/c-profile-box';

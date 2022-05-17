@@ -1,0 +1,14 @@
+$component-name: 'c-informations';
+
+.#{$component-name} {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+
+  @include breakpoint(768px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}

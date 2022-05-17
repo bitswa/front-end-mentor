@@ -1,0 +1,18 @@
+$component-name: 'l-footer';
+
+.#{$component-name} {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10rem 1rem 2rem 1rem;
+  background-color: var(--color-footer-background);
+
+  @include breakpoint(768px) {
+    padding: 10rem 2rem 5rem 2rem;
+  }
+
+  header {
+    width: 100%;
+  }
+}

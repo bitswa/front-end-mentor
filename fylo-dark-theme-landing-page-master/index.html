@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://kit.fontawesome.com/2813fd7c09.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap">
+  <link rel="stylesheet" href="scss/style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+  <header class="l-header">
+    <img class="c-logo" src="images/logo.svg" alt="logo">
+
+    <nav class="l-header__nav">
+      <ul class="c-options">
+        <li class="c-item">
+          <a class="c-item__link" href="">
+            Features
+          </a>
+        </li>
+        <li class="c-item">
+          <a class="c-item__link" href="">
+            Team
+          </a>
+        </li>
+        <li class="c-item">
+          <a class="c-item__link" href="">
+            Sign In
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="l-main">
+
+    <section class="l-main__header">
+      <figure>
+        <img class="l-main__header_illustration"
+          src="images/illustration-intro.png"
+          alt="illustration-intro">
+
+        <h1 class="l-main__header_main-title">All your files in one secure location, accessible anywhere</h1>
+        <figcaption class="l-main_header_subtitle">
+          Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
+        </figcaption>
+      </figure>
+
+      <button class="c-button">Get Started</button>
+
+    </section>
+
+    <section class="l-main__informations">
+      <figure>
+        <img class="l-main__informations_illustration"
+          src="images/icon-access-anywhere.svg"
+          alt="computer and smartphone">
+        
+        <h3 class="l-main__informations_main-title">Access your files, anywhere</h3>
+        <figcaption class="l-main__informations_subtitle">
+          The abillity to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img class="l-main__informations_illustration" src="images/icon-security.svg" alt="Safety">
+
+        <h3 class="l-main__informations_main-title">Security you can trust</h3>
+        <figcaption class="l-main__informations_subtitle">
+          2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img class="l-main__informations_illustration"src="images/icon-collaboration.svg" alt="collaboration in real time">
+
+        <h3 class="l-main__informations_main-title">Real-time collaboration</h3>
+        <figcaption class="l-main__informations_subtitle">
+          Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img class="l-main__informations_illustration"src="images/icon-any-file.svg" alt="any file">
+
+        <h3 class="l-main__informations_main-title">Store any type of file</h3>
+        <figcaption class="l-main__informations_subtitle">
+          Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.
+        </figcaption>
+      </figure>
+
+    </section>
+
+    <section class="l-main__productive">
+      <figure>
+        <img class="l-main__productive_illustration" src="images/illustration-stay-productive.png" alt="productive">
+
+        <h3 class="l-main__productive_main-title">Stay productive, wherever you are</h3>
+        <figcaption class="l-main__productive_subtitle">
+          <p class="c-first-sub">
+            Never let location be an issue when accessing your files. Fylo has covered for all of your files storage needs.
+          </p>
+          <p class="c-second-sub">
+            Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
+          </p>
+        </figcaption>
+      </figure>
+
+      <a class="l-main__productive_link" href="#">
+        See how Fylo works
+        <img class="c-arrow"
+          src="images/icon-arrow.svg" alt="arrow">
+      </a>
+
+    </section>
+
+    <section class="l-main__cards">
+      <div class="l-main__cards_card">
+        <p class="c-main-title">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+
+        <figure class="c-profile-box">
+          <img class="c-profile-box__pic"
+            src="images/profile-1.jpg" alt="profile-picture">
+
+          <figcaption>
+            <h4 class="c-profile-box__name">Satish Patel</h4>
+            <h5 class="c-profile-box__job">Founder & CEO, Huddle</h5>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="l-main__cards_card">
+        <p class="c-main-title">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a
+          well-oiled collaboration machine.</p>
+      
+        <figure class="c-profile-box">
+          <img class="c-profile-box__pic" src="images/profile-2.jpg" alt="profile-picture">
+      
+          <figcaption>
+            <h4 class="c-profile-box__name">Bruce McKenzie</h3>
+            <h5 class="c-profile-box__job">Founder & CEO, Huddle</h5>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="l-main__cards_card">
+        <p class="c-main-title">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a
+          well-oiled collaboration machine.</p>
+      
+        <figure class="c-profile-box">
+          <img class="c-profile-box__pic" src="images/profile-3.jpg" alt="profile-picture">
+      
+          <figcaption>
+            <h4 class="c-profile-box__name">Iva Boyd</h4>
+            <h5 class="c-profile-box__job">Founder & CEO, Huddle</>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div>
+      <h2>Get early access today</h2>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+
+      <form action="">
+        <input type="text" placeholder="email@example.com">
+        <button class="c-button">
+          Get Started For Free</button>
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="l-footer">
+    <header>
+      <img src="images/logo.svg" alt="logo">
+    </header>
+
+    <div class="c-informations">
+      
+      <section class="c-contacts">
+        <div class="c-location">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="c-location__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto eaque quod placeat animi magnam molestias accusamus.
+          </p>
+        </div>
+
+        <ul class="c-contacts__list">
+          <li class="c-contacts__list_item">
+            <i class="fa-solid fa-phone"></i>
+            +1-543-123-4567
+          </li>
+          <li class="c-contacts__list_item">
+            <i class="fa-solid fa-envelope"></i>
+            example@fylo.com
+          </li>
+        </ul>
+      </section>
+      
+      <section class="c-contacts">
+        <div class="asda">
+          <ul class="c-contacts__list">
+            <li class="c-contacts__list_item">About us</li>
+            <li class="c-contacts__list_item">Jobs</li>
+            <li class="c-contacts__list_item">Press</li>
+            <li class="c-contacts__list_item">Blog</li>
+          </ul>
+
+          <ul class="c-contacts__list">
+            <li class="c-contacts__list_item">Contact us</li>
+            <li class="c-contacts__list_item">Terms</li>
+            <li class="c-contacts__list_item">Privacy</li>
+          </ul>
+        </div>
+        
+        
+        <ul class="c-social-medias">
+          <div class="c-circle">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+
+          <div class="c-circle">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+
+          <div class="c-circle">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </ul>
+      </section>
+    </div>
+
+  </footer>
+
+  <div>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Gabriel (bits) Moura do Val</a>.
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+$component-name: 'c-options';
+
+.#{$component-name} {
+  display: flex;
+  list-style-type: none;
+
+  .c-item {
+    cursor: pointer;
+
+    &__link {
+      text-decoration: none;
+      color: var(--color-white);
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+
+      @include breakpoint(768px) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

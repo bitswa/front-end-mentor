@@ -1,0 +1,46 @@
+$component-name: 'c-contacts';
+
+.#{$component-name} {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 3rem;
+
+  .asda {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  @include breakpoint(768px) {
+    flex-direction: row;
+
+    .asda {
+      flex-direction: row;
+    }
+  }
+
+  &__list_item {
+    display: flex;
+    align-items: baseline;
+    list-style-type: none;
+
+    i { margin-right: 12px; }
+
+      &:not(:last-child) {
+      margin-bottom: 16px;
+
+      @include breakpoint(768px) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .c-location {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    width: 100%;
+  }
+}
