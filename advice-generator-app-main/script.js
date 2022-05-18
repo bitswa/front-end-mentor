@@ -1,14 +1,17 @@
-const id = document.querySelector('.c-advice__id');
-const advice = document.querySelector('.c-quote');
+const $id = document.querySelector('.c-advice__id');
+const $advice = document.querySelector('.c-quote');
+const $random = document.querySelector('.c-circle');
 
-const fetchAdvice = async () => {
-   const res = await fetch("https://api.adviceslip.com/advice", {cache: 'no-store'});
-   const data = await res.json();
-
-   id.textContent = data.slip.id;
-   advice.textContent = `"${data.slip.advice}"`;
-   
+const fetchAdvice = () => {
+   fetch("https://api.adviceslip.com/advice", {cache: 'no-store'})
+      .then(response => {
+         response.json().then( res => {
+            $id.textContent = res.slip.id;
+            $advice.textContent = `"${res.slip.advice}"`;
+         });
+      })
+      .catch(err => console.log(err));
 }
-fetchAdvice();
 
-document.querySelector('.c-circle').addEventListener('click', fetchAdvice);
+fetchAdvice();
+$random.addEventListener('click', fetchAdvice);
