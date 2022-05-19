@@ -8,18 +8,30 @@ $component-name: 'l-main';
   background-color: var(--color-main-background);
 
   text-align: center;
-  padding: 2.3rem 2.3rem 19rem 2.3rem;
-  @include breakpoint(768px) {
-    padding: 3rem 3rem 19rem 3rem;
+  padding: 0 0 19rem 0;
+
+  .background {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-int-sign-background);
+    // background-image: url(../../images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 100%;
+    background-image: url(../../images/bg-curvy-desktop.svg);
+    @include breakpoint(768px) {
+      background-position-y: 115%;
+    }
   }
 
   &__header {
     align-self: center;
-    background-color: var(--color-int-sign-background);
+    padding: 0 2.3rem;
 
     @include breakpoint(768px) {
       width: 40%;
       margin: 0 7rem;
+      
     }
 
     figure {
@@ -46,6 +58,8 @@ $component-name: 'l-main';
   }
 
   &__informations {
+    margin: 0 2.3rem;
+
     @include flexColumnGap(6rem);
     @include breakpoint(768px) {
       display: grid;
@@ -72,6 +86,7 @@ $component-name: 'l-main';
 
   &__productive {
     text-align: left;
+    margin: 0 2.3rem;
 
     figure {
       @include flexColumnGap(1rem);
@@ -117,6 +132,7 @@ $component-name: 'l-main';
   }
 
   &__cards {
+    margin: 0 2.3rem;
     @include flexColumnGap(2rem);
     @include breakpoint(768px) {
       flex-direction: row;

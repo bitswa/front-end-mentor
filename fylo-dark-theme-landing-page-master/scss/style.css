@@ -62,12 +62,26 @@ body {
   color: var(--color-white);
   background-color: var(--color-main-background);
   text-align: center;
-  padding: 2.3rem 2.3rem 19rem 2.3rem;
+  padding: 0 0 19rem 0;
+}
+
+.l-main .background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--color-int-sign-background);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 100%;
+  background-image: url(../../images/bg-curvy-desktop.svg);
 }
 
 @media (min-width: 768px) {
-  .l-main {
-    padding: 3rem 3rem 19rem 3rem;
+  .l-main .background {
+    background-position-y: 115%;
   }
 }
 
@@ -75,7 +89,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: var(--color-int-sign-background);
+  padding: 0 2.3rem;
 }
 
 @media (min-width: 768px) {
@@ -121,6 +135,7 @@ body {
 }
 
 .l-main__informations {
+  margin: 0 2.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,6 +187,7 @@ body {
 
 .l-main__productive {
   text-align: left;
+  margin: 0 2.3rem;
 }
 
 .l-main__productive figure {
@@ -254,6 +270,7 @@ body {
 }
 
 .l-main__cards {
+  margin: 0 2.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
